@@ -5,6 +5,8 @@
 }
 
 @theme {
+  --font-code: "Source Code Pro", monospace;
+
   --color-color-1: #ac6aff;
   --color-color-2: #ffc876;
   --color-color-3: #ff776f;
@@ -27,8 +29,8 @@
   --color-n-13: #6c7275;
 }
 
-@layer base {
-  button {
+@layer components {
+  .button {
     @apply font-mono text-xs font-bold uppercase tracking-wider;
   }
 }
