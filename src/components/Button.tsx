@@ -3,7 +3,7 @@ import ButtonSvg from "../assets/svg/ButtonSvg";
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps {
-  className: string;
+  className?: string;
   href?: string;
   children?: ReactNode;
   px?: string;

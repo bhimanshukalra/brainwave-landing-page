@@ -27,10 +27,21 @@
   --color-n-11: #1b1b2e;
   --color-n-12: #2e2a41;
   --color-n-13: #6c7275;
+
+  --color-stroke-1: #26242c;
 }
 
 @layer components {
   .button {
     @apply font-mono text-xs font-bold uppercase tracking-wider;
+  }
+  .container {
+    @apply max-w-310 mx-auto px-5 md:px-10 lg:px-15 xl:max-w-350;
+  }
+  .h1 {
+    @apply font-semibold text-[2.5rem] leading-13 md:text-[2.75rem] md:leading-15 lg:text-[3.25rem] lg:leading-16.25 xl:text-[3.75rem] xl:leading-18;
+  }
+  .body-1 {
+    @apply text-[0.875rem] leading-6 md:text-[1rem] md:leading-7 lg:text-[1.25rem] lg:leading-8;
   }
 }
