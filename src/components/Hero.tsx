@@ -7,6 +7,7 @@ import { heroIcons } from "../constants";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { Generating } from "./Generating";
 import { Notification } from "./Notification";
+import { CompanyLogos } from "./CompanyLogos";
 
 export const Hero = () => {
   const parallaxRef = useRef(null);
@@ -16,7 +17,6 @@ export const Hero = () => {
       className="pt-48 -mt-20"
       crosses
       crossesOffset="lg:translate-y-20"
-      customPaddings=""
       id="hero"
     >
       <div className="container relative" ref={parallaxRef}>
@@ -42,7 +42,7 @@ export const Hero = () => {
             Get Started
           </Button>
         </div>
-        <div className="relativem max-w-96 mx-auto md:max-w-5xl xl:mb-24">
+        <div className="relative max-w-96 mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
             <div className="relative bg-n-8 rounded-2xl">
               <div className="h-4 bg-n-10 rounded-t-2xl" />
@@ -75,7 +75,7 @@ export const Hero = () => {
             </div>
             <Gradient />
           </div>
-          <div className="absolute top-[24%] left-1/2 w-[234%] -translate-x-1/2 md:top-0 md:w-[138%]">
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={heroBackground}
               className="w-full"
@@ -86,6 +86,7 @@ export const Hero = () => {
           </div>
           <BackgroundCircles parallaxRef={parallaxRef} />
         </div>
+        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
       </div>
       <BottomLine />
     </Section>
