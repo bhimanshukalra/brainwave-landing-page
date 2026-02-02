@@ -1,4 +1,8 @@
-const brackets = (position) =>
+interface BracketsProps {
+  position: "left" | "right";
+}
+
+const Brackets = ({ position }: BracketsProps) =>
   position === "left" ? (
     <svg
       width="5"
@@ -42,4 +46,4 @@ const brackets = (position) =>
     </svg>
   );
 
-export default brackets;
+export default Brackets;
