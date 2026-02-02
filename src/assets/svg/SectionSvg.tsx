@@ -4,7 +4,7 @@ interface SectionSvgProps {
   crossesOffset?: string;
 }
 
-const SectionSvg = ({ crossesOffset }: SectionSvgProps) => {
+export const SectionSvg = ({ crossesOffset }: SectionSvgProps) => {
   return (
     <>
       <PlusSvg
@@ -21,5 +21,3 @@ const SectionSvg = ({ crossesOffset }: SectionSvgProps) => {
     </>
   );
 };
-
-export default SectionSvg;

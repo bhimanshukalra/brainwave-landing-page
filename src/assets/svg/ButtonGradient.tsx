@@ -1,4 +1,4 @@
-const ButtonGradient = () => {
+export const ButtonGradient = () => {
   return (
     <svg className="block" width={0} height={0}>
       <defs>
@@ -28,5 +28,3 @@ const ButtonGradient = () => {
     </svg>
   );
 };
-
-export default ButtonGradient;

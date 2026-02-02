@@ -2,7 +2,7 @@ interface MenuSvgProps {
   openNavigation: boolean;
 }
 
-const MenuSvg = ({ openNavigation }: MenuSvgProps) => {
+export const MenuSvg = ({ openNavigation }: MenuSvgProps) => {
   return (
     <svg
       className="overflow-visible"
@@ -31,5 +31,3 @@ const MenuSvg = ({ openNavigation }: MenuSvgProps) => {
     </svg>
   );
 };
-
-export default MenuSvg;

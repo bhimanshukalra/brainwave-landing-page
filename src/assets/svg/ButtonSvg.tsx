@@ -1,4 +1,4 @@
-const ButtonSvg = ({ white = false }: { white?: boolean }) => (
+export const ButtonSvg = ({ white = false }: { white?: boolean }) => (
   <>
     <svg
       className="absolute top-0 left-0"
@@ -56,5 +56,3 @@ const ButtonSvg = ({ white = false }: { white?: boolean }) => (
     </svg>
   </>
 );
-
-export default ButtonSvg;

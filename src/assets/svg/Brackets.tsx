@@ -2,8 +2,8 @@ interface BracketsProps {
   position: "left" | "right";
 }
 
-const Brackets = ({ position }: BracketsProps) =>
-  position === "left" ? (
+export const Brackets = ({ position }: BracketsProps) => {
+  return position === "left" ? (
     <svg
       width="5"
       height="14"
@@ -45,5 +45,4 @@ const Brackets = ({ position }: BracketsProps) =>
       </defs>
     </svg>
   );
-
-export default Brackets;
+};
