@@ -1,5 +1,5 @@
-import ButtonGradient from "./assets/svg/ButtonGradient";
-import { Header, Hero } from "./components";
+import { ButtonGradient } from "./assets/svg";
+import { Benefits, Header, Hero } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <div className="pt-20 lg:pt-20 overflow-hidden">
         <Header />
         <Hero />
+        <Benefits />
       </div>
       <ButtonGradient />
     </>

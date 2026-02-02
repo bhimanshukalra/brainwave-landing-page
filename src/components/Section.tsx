@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { twMerge } from "tailwind-merge";
-import SectionSvg from "../assets/svg/SectionSvg";
+import { SectionSvg } from "../assets/svg";
 
 interface SectionProps {
   className?: string;

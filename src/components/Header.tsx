@@ -3,9 +3,9 @@ import { brainwave } from "../assets";
 import { navigation } from "../constants";
 import { Button } from "./Button";
 import { useState } from "react";
-import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { MenuSvg } from "../assets/svg";
 
 export const Header = () => {
   const location = useLocation();

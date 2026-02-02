@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import ButtonSvg from "../assets/svg/ButtonSvg";
+import { ButtonSvg } from "../assets/svg";
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps {
