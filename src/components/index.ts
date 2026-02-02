@@ -4,3 +4,4 @@ export * from "./Section";
 export * from "./Hero";
 export * from "./Benefits";
 export * from "./Heading";
+export * from "./Collaboration";
