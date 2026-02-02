@@ -5,3 +5,4 @@ export * from "./Hero";
 export * from "./Benefits";
 export * from "./Heading";
 export * from "./Collaboration";
+export * from "./Services";

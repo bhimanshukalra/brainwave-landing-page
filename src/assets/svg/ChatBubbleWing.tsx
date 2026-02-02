@@ -1,6 +1,6 @@
 interface ChatBubbleWingProps {
-  className: string;
-  pathClassName: string;
+  className?: string;
+  pathClassName?: string;
 }
 
 export const ChatBubbleWing = ({
