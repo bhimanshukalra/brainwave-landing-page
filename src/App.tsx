@@ -5,6 +5,7 @@ import {
   Header,
   Hero,
   Pricing,
+  Roadmap,
   Services,
 } from "./components";
 
@@ -18,6 +19,7 @@ function App() {
         <Collaboration />
         <Services />
         <Pricing />
+        <Roadmap />
       </div>
       <ButtonGradient />
     </>

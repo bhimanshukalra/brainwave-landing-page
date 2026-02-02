@@ -7,3 +7,4 @@ export * from "./Heading";
 export * from "./Collaboration";
 export * from "./Services";
 export * from "./Pricing";
+export * from "./Roadmap";
