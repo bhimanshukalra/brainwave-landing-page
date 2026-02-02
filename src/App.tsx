@@ -1,5 +1,12 @@
 import { ButtonGradient } from "./assets/svg";
-import { Benefits, Collaboration, Header, Hero, Services } from "./components";
+import {
+  Benefits,
+  Collaboration,
+  Header,
+  Hero,
+  Pricing,
+  Services,
+} from "./components";
 
 function App() {
   return (
@@ -10,6 +17,7 @@ function App() {
         <Benefits />
         <Collaboration />
         <Services />
+        <Pricing />
       </div>
       <ButtonGradient />
     </>
