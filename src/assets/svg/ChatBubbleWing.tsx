@@ -3,7 +3,10 @@ interface ChatBubbleWingProps {
   pathClassName: string;
 }
 
-const ChatBubbleWing = ({ className, pathClassName }: ChatBubbleWingProps) => {
+export const ChatBubbleWing = ({
+  className,
+  pathClassName,
+}: ChatBubbleWingProps) => {
   return (
     <svg
       className={`${className || ""}`}
@@ -18,5 +21,3 @@ const ChatBubbleWing = ({ className, pathClassName }: ChatBubbleWingProps) => {
     </svg>
   );
 };
-
-export default ChatBubbleWing;
