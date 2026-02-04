@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# Brainwave
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI Chat App for seamless collaboration built with modern web technologies.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Brainwave is a sleek, modern AI chat application designed to facilitate seamless collaboration and communication. It features an intuitive interface with real-time collaboration capabilities, powered by advanced AI technology.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite for fast development and optimized builds
+- **Styling**: Tailwind CSS for utility-first styling
+- **Language**: TypeScript for type-safe development
+- **Linting**: ESLint for code quality
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (v18 or higher)
+- pnpm (package manager)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+### Development
+
+Run the development server:
+
+```bash
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The app will be available at `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Create a production build:
+
+```bash
+pnpm build
 ```
+
+### Preview
+
+Preview the production build locally:
+
+```bash
+pnpm preview
+```
+
+## Project Structure
+
+```
+src/
+├── components/        # Reusable React components
+├── assets/           # Images, icons, and static assets
+├── constants/        # Configuration and constants
+├── App.tsx          # Main application component
+└── main.tsx         # Application entry point
+```
+
+## Components
+
+- **Header**: Navigation and branding
+- **Hero**: Landing hero section
+- **Benefits**: Feature highlights and benefits
+- **Collaboration**: Collaboration features showcase
+- **Pricing**: Pricing plans section
+- **Notification**: Notification system display
+- **CompanyLogos**: Partner company logos
+- **Section**: Reusable section wrapper component
+
+## Styling
+
+The project uses Tailwind CSS with custom extensions
