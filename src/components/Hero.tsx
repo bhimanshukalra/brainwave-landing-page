@@ -10,7 +10,7 @@ import { Notification } from "./Notification";
 import { CompanyLogos } from "./CompanyLogos";
 
 export const Hero = () => {
-  const parallaxRef = useRef(null);
+  const parallaxRef = useRef<HTMLDivElement>(null);
 
   return (
     <Section
